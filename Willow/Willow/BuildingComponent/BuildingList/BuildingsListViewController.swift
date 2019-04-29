@@ -65,35 +65,11 @@ class BuildingsListViewController: UIViewController {
         alert.addAction(action)
         self.present(alert, animated: false, completion: nil)
       }
-    }
+    }.disposed(by: bag)
   }
   @objc
   private func didTapFilter() {
     viewModel.onFilter(input: self)
-  }
-  private func testResponse() {
-    if let path = Bundle.main.path(forResource: "testResponse", ofType: "json") {
-      do {
-        let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
-        let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
-        if let jsonResult = jsonResult as? Array<Dictionary<String, AnyObject>> {
-          // do stuff
-          var buildings: [BuildingJSON] = []
-          for item in jsonResult {
-            let decoder = JSONDecoder()
-            let data2 = try JSONSerialization.data(withJSONObject: item, options: JSONSerialization.WritingOptions.prettyPrinted)
-            let building = try decoder.decode(BuildingJSON.self, from: data2)
-            buildings.append(building)
-          }
-          print(buildings)
-        } else {
-          print("SADFASDF")
-        }
-      } catch let error {
-        // handle error
-        print(error)
-      }
-    }
   }
 }
 

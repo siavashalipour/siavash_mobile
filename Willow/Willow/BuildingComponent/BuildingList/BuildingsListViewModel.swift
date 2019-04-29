@@ -15,8 +15,6 @@ import Reachability
 
 final class BuildingsListViewModel {
   
-  private var reachability: Reachability?
-
   let filteredBuilding = Variable<[Building]?>(nil)
   lazy var isLoading: Driver<Bool> = {
     return isLoadingPublisher.asDriver(onErrorJustReturn: true)
@@ -32,16 +30,20 @@ final class BuildingsListViewModel {
   private let bag = DisposeBag()
   private let navigator: Navigator
   
-  init(with filter: [Filter]?, navigator: Navigator) {
+  init(with filter: [Filter]?, navigator: Navigator, buildings: [Building]? = nil) {
     self.filters = filter
     self.navigator = navigator
     self.isLoadingPublisher.onNext(true)
-    reachability = Reachability()
-    try? reachability?.startNotifier()
-    reachability?.rx.reachabilityChanged
+    self.filteredBuilding.value = buildings
+    self.buildings.value = buildings
+    Reachability.rx.reachabilityChanged
       .subscribe(onNext: { (reachability) in
         if reachability.connection != .none {
-          self.fetch()
+          if buildings == nil {
+            self.fetch()
+          }
+        } else {
+          self.errorPublisher.onNext("No Internert connection...")
         }
       })
       .disposed(by: bag)

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Reachability
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,9 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
 
   let navigator = Navigator()
+  var reachability: Reachability?
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
+    reachability = Reachability()
+    try? reachability?.startNotifier()
     let rootNavigator = window!.rootViewController! as! UINavigationController
     navigator.show(segue: .buildingsListViewController(BuildingsListViewModel.init(with: nil, navigator: navigator)), sender: rootNavigator)
     return true
