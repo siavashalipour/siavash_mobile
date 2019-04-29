@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		068DAE6310B73C37C9A30C65 /* Pods_Willow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7237A292AF8B49604A134D94 /* Pods_Willow.framework */; };
+		15AB3E415FA766FB18325067 /* Pods_WillowTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A26129EEA1B34A64F9506B8 /* Pods_WillowTests.framework */; };
 		7C56E229227682430084FF07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C56E228227682430084FF07 /* AppDelegate.swift */; };
 		7C56E22B227682430084FF07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C56E22A227682430084FF07 /* ViewController.swift */; };
 		7C56E22E227682430084FF07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C56E22C227682430084FF07 /* Main.storyboard */; };
@@ -26,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		164D0471084FFD7809C597B5 /* Pods-WillowTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WillowTests.debug.xcconfig"; path = "Target Support Files/Pods-WillowTests/Pods-WillowTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5313C377BB686E46CB667FE4 /* Pods-Willow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Willow.debug.xcconfig"; path = "Target Support Files/Pods-Willow/Pods-Willow.debug.xcconfig"; sourceTree = "<group>"; };
+		7237A292AF8B49604A134D94 /* Pods_Willow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Willow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C56E225227682430084FF07 /* Willow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Willow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C56E228227682430084FF07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C56E22A227682430084FF07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +41,9 @@
 		7C56E239227682440084FF07 /* WillowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WillowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C56E23D227682440084FF07 /* WillowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillowTests.swift; sourceTree = "<group>"; };
 		7C56E23F227682440084FF07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A26129EEA1B34A64F9506B8 /* Pods_WillowTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WillowTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F62434CD8DA1DDFB1073BA22 /* Pods-Willow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Willow.release.xcconfig"; path = "Target Support Files/Pods-Willow/Pods-Willow.release.xcconfig"; sourceTree = "<group>"; };
+		FAFEB5B3F2ABE9C63AF4119A /* Pods-WillowTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WillowTests.release.xcconfig"; path = "Target Support Files/Pods-WillowTests/Pods-WillowTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				068DAE6310B73C37C9A30C65 /* Pods_Willow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15AB3E415FA766FB18325067 /* Pods_WillowTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +72,8 @@
 				7C56E227227682430084FF07 /* Willow */,
 				7C56E23C227682440084FF07 /* WillowTests */,
 				7C56E226227682430084FF07 /* Products */,
+				D3292116FAC2914E29BDE298 /* Pods */,
+				9AC0BCFF26193BAECEC6B1DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +108,26 @@
 			path = WillowTests;
 			sourceTree = "<group>";
 		};
+		9AC0BCFF26193BAECEC6B1DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7237A292AF8B49604A134D94 /* Pods_Willow.framework */,
+				8A26129EEA1B34A64F9506B8 /* Pods_WillowTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3292116FAC2914E29BDE298 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5313C377BB686E46CB667FE4 /* Pods-Willow.debug.xcconfig */,
+				F62434CD8DA1DDFB1073BA22 /* Pods-Willow.release.xcconfig */,
+				164D0471084FFD7809C597B5 /* Pods-WillowTests.debug.xcconfig */,
+				FAFEB5B3F2ABE9C63AF4119A /* Pods-WillowTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C56E242227682440084FF07 /* Build configuration list for PBXNativeTarget "Willow" */;
 			buildPhases = (
+				483502F2A5671033503B32DF /* [CP] Check Pods Manifest.lock */,
 				7C56E221227682430084FF07 /* Sources */,
 				7C56E222227682430084FF07 /* Frameworks */,
 				7C56E223227682430084FF07 /* Resources */,
+				C50F3D8CFB2E0F2525161116 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +154,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C56E245227682440084FF07 /* Build configuration list for PBXNativeTarget "WillowTests" */;
 			buildPhases = (
+				8F666FB6320E171D9EEC78FB /* [CP] Check Pods Manifest.lock */,
 				7C56E235227682440084FF07 /* Sources */,
 				7C56E236227682440084FF07 /* Frameworks */,
 				7C56E237227682440084FF07 /* Resources */,
@@ -191,6 +226,79 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		483502F2A5671033503B32DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Willow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F666FB6320E171D9EEC78FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WillowTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C50F3D8CFB2E0F2525161116 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Willow/Pods-Willow-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Willow/Pods-Willow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7C56E221227682430084FF07 /* Sources */ = {
@@ -291,7 +399,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -346,7 +454,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -358,11 +466,13 @@
 		};
 		7C56E243227682440084FF07 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5313C377BB686E46CB667FE4 /* Pods-Willow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33GWFDB497;
 				INFOPLIST_FILE = Willow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -376,11 +486,13 @@
 		};
 		7C56E244227682440084FF07 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F62434CD8DA1DDFB1073BA22 /* Pods-Willow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33GWFDB497;
 				INFOPLIST_FILE = Willow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -394,6 +506,7 @@
 		};
 		7C56E246227682440084FF07 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 164D0471084FFD7809C597B5 /* Pods-WillowTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -415,6 +528,7 @@
 		};
 		7C56E247227682440084FF07 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAFEB5B3F2ABE9C63AF4119A /* Pods-WillowTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
