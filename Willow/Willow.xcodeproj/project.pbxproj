@@ -10,12 +10,18 @@
 		068DAE6310B73C37C9A30C65 /* Pods_Willow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7237A292AF8B49604A134D94 /* Pods_Willow.framework */; };
 		15AB3E415FA766FB18325067 /* Pods_WillowTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A26129EEA1B34A64F9506B8 /* Pods_WillowTests.framework */; };
 		7C56E229227682430084FF07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C56E228227682430084FF07 /* AppDelegate.swift */; };
-		7C56E22B227682430084FF07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C56E22A227682430084FF07 /* ViewController.swift */; };
+		7C56E22B227682430084FF07 /* BuildingsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C56E22A227682430084FF07 /* BuildingsListViewController.swift */; };
 		7C56E22E227682430084FF07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C56E22C227682430084FF07 /* Main.storyboard */; };
 		7C56E230227682440084FF07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C56E22F227682440084FF07 /* Assets.xcassets */; };
 		7C56E233227682440084FF07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C56E231227682440084FF07 /* LaunchScreen.storyboard */; };
 		7C56E23E227682440084FF07 /* WillowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C56E23D227682440084FF07 /* WillowTests.swift */; };
 		7C75DFA42276876600371FF2 /* BuildingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75DFA32276876600371FF2 /* BuildingModel.swift */; };
+		7C75DFA622768B7500371FF2 /* BuildingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75DFA522768B7500371FF2 /* BuildingTableViewCell.swift */; };
+		7C75DFA822768BA800371FF2 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75DFA722768BA800371FF2 /* UITableView+.swift */; };
+		7C75DFAA22768D4F00371FF2 /* WCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75DFA922768D4F00371FF2 /* WCustomButton.swift */; };
+		7C75DFAC2276907900371FF2 /* BuildingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75DFAB2276907900371FF2 /* BuildingViewController.swift */; };
+		7C75DFAE2276990E00371FF2 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75DFAD2276990E00371FF2 /* FilterViewController.swift */; };
+		7C75DFB0227699CF00371FF2 /* FilterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75DFAF227699CF00371FF2 /* FilterModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +40,7 @@
 		7237A292AF8B49604A134D94 /* Pods_Willow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Willow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C56E225227682430084FF07 /* Willow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Willow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C56E228227682430084FF07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7C56E22A227682430084FF07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7C56E22A227682430084FF07 /* BuildingsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingsListViewController.swift; sourceTree = "<group>"; };
 		7C56E22D227682430084FF07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C56E22F227682440084FF07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C56E232227682440084FF07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -43,6 +49,12 @@
 		7C56E23D227682440084FF07 /* WillowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillowTests.swift; sourceTree = "<group>"; };
 		7C56E23F227682440084FF07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C75DFA32276876600371FF2 /* BuildingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingModel.swift; sourceTree = "<group>"; };
+		7C75DFA522768B7500371FF2 /* BuildingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingTableViewCell.swift; sourceTree = "<group>"; };
+		7C75DFA722768BA800371FF2 /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
+		7C75DFA922768D4F00371FF2 /* WCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCustomButton.swift; sourceTree = "<group>"; };
+		7C75DFAB2276907900371FF2 /* BuildingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingViewController.swift; sourceTree = "<group>"; };
+		7C75DFAD2276990E00371FF2 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		7C75DFAF227699CF00371FF2 /* FilterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterModel.swift; sourceTree = "<group>"; };
 		8A26129EEA1B34A64F9506B8 /* Pods_WillowTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WillowTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F62434CD8DA1DDFB1073BA22 /* Pods-Willow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Willow.release.xcconfig"; path = "Target Support Files/Pods-Willow/Pods-Willow.release.xcconfig"; sourceTree = "<group>"; };
 		FAFEB5B3F2ABE9C63AF4119A /* Pods-WillowTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WillowTests.release.xcconfig"; path = "Target Support Files/Pods-WillowTests/Pods-WillowTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -92,8 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				7C56E228227682430084FF07 /* AppDelegate.swift */,
-				7C56E22A227682430084FF07 /* ViewController.swift */,
+				7C56E22A227682430084FF07 /* BuildingsListViewController.swift */,
+				7C75DFAB2276907900371FF2 /* BuildingViewController.swift */,
+				7C75DFAD2276990E00371FF2 /* FilterViewController.swift */,
+				7C75DFAF227699CF00371FF2 /* FilterModel.swift */,
 				7C75DFA32276876600371FF2 /* BuildingModel.swift */,
+				7C75DFA522768B7500371FF2 /* BuildingTableViewCell.swift */,
+				7C75DFA922768D4F00371FF2 /* WCustomButton.swift */,
+				7C75DFA722768BA800371FF2 /* UITableView+.swift */,
 				7C56E22C227682430084FF07 /* Main.storyboard */,
 				7C56E22F227682440084FF07 /* Assets.xcassets */,
 				7C56E231227682440084FF07 /* LaunchScreen.storyboard */,
@@ -310,9 +328,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C56E22B227682430084FF07 /* ViewController.swift in Sources */,
+				7C75DFAA22768D4F00371FF2 /* WCustomButton.swift in Sources */,
+				7C56E22B227682430084FF07 /* BuildingsListViewController.swift in Sources */,
+				7C75DFAE2276990E00371FF2 /* FilterViewController.swift in Sources */,
+				7C75DFB0227699CF00371FF2 /* FilterModel.swift in Sources */,
 				7C75DFA42276876600371FF2 /* BuildingModel.swift in Sources */,
 				7C56E229227682430084FF07 /* AppDelegate.swift in Sources */,
+				7C75DFA822768BA800371FF2 /* UITableView+.swift in Sources */,
+				7C75DFA622768B7500371FF2 /* BuildingTableViewCell.swift in Sources */,
+				7C75DFAC2276907900371FF2 /* BuildingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -31,13 +31,16 @@ struct Address {
 enum ProductType: String {
   case explorer = "AssetExplorer"
   case register = "AssetRegister"
+  case map
   
   var previewDescription: String {
     switch self {
     case .explorer:
-      return "Go to explorer"
+      return "Go to Explorer"
     case .register:
       return "Register"
+    case .map:
+      return "View on Map"
     }
   }
 }
