@@ -12,6 +12,7 @@ target 'Willow' do
   pod 'Nuke'
   pod 'Action'
   pod 'RxGesture'
+  pod 'RxReachability'
   
   target 'WillowTests' do
     inherit! :search_paths

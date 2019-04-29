@@ -10,9 +10,13 @@ import RxSwift
 import RxCocoa
 import Action
 import MapKit
+import RxReachability
+import Reachability
 
 final class BuildingsListViewModel {
   
+  private var reachability: Reachability?
+
   let filteredBuilding = Variable<[Building]?>(nil)
   lazy var isLoading: Driver<Bool> = {
     return isLoadingPublisher.asDriver(onErrorJustReturn: true)
@@ -32,7 +36,15 @@ final class BuildingsListViewModel {
     self.filters = filter
     self.navigator = navigator
     self.isLoadingPublisher.onNext(true)
-    fetch()
+    reachability = Reachability()
+    try? reachability?.startNotifier()
+    reachability?.rx.reachabilityChanged
+      .subscribe(onNext: { (reachability) in
+        if reachability.connection != .none {
+          self.fetch()
+        }
+      })
+      .disposed(by: bag)
   }
   
   func fetch() {

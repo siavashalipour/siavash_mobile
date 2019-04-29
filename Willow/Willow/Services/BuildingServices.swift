@@ -8,7 +8,6 @@
 
 import RxSwift
 
-
 enum ApiError: Error {
   case badReponse
   case unexpectedFormat

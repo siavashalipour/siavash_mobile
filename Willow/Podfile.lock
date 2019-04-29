@@ -3,11 +3,16 @@ PODS:
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
   - Nuke (7.6.2)
+  - ReachabilitySwift (4.3.1)
   - RxCocoa (4.5.0):
     - RxSwift (>= 4.4.2, ~> 4.4)
   - RxGesture (2.2.0):
     - RxCocoa (~> 4.5)
     - RxSwift (~> 4.5)
+  - RxReachability (0.1.8):
+    - ReachabilitySwift (~> 4.3.0)
+    - RxCocoa (~> 4)
+    - RxSwift (~> 4)
   - RxSwift (4.5.0)
   - SnapKit (5.0.0)
 
@@ -16,6 +21,7 @@ DEPENDENCIES:
   - Nuke
   - RxCocoa
   - RxGesture
+  - RxReachability
   - RxSwift
   - SnapKit (~> 5.0.0)
 
@@ -23,19 +29,23 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Action
     - Nuke
+    - ReachabilitySwift
     - RxCocoa
     - RxGesture
+    - RxReachability
     - RxSwift
     - SnapKit
 
 SPEC CHECKSUMS:
   Action: 689181e4c3f6566844178d8a7da6fef39a9597fc
   Nuke: 392eff7cb037adbec6699febe9237849ac5dcc47
+  ReachabilitySwift: 4032e2f59586e11e3b0ebe15b167abdd587a388b
   RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
   RxGesture: c1b7bf17166b0ef9d642a9510f8bac5785f18990
+  RxReachability: 053f2d913db44998242ade488ccaef558f3ce7cb
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
   SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
 
-PODFILE CHECKSUM: 637ee4fe2306ca2fdad5ece45da1d559a8bda2cf
+PODFILE CHECKSUM: deab2e7e376c3718e8cbf94e9fae8fa2791bbdc2
 
 COCOAPODS: 1.6.0.beta.1
