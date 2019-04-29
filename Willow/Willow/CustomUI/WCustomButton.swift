@@ -11,6 +11,8 @@ import UIKit
 
 final class WCustomButton: UIButton {
   
+  private(set) var type: ProductType = .map
+  
   override init(frame: CGRect) {
     super.init(frame: frame)
     setupUI()
@@ -31,6 +33,7 @@ final class WCustomButton: UIButton {
   }
   func config(for type: ProductType) {
     setTitle(type.previewDescription, for: .normal)
+    self.type = type
     switch type {
     case .explorer:
       setImage(#imageLiteral(resourceName: "icons8-arrow_filled"), for: .normal)

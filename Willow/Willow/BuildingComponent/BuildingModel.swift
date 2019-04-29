@@ -10,7 +10,27 @@ import Foundation
 
 typealias Codable = Decodable & Encodable
 
-struct Building: Codable {
+struct Building: Hashable {
+
+  
+  let jsonObj: BuildingJSON
+  var isRegistered: Bool = false
+  
+  func hash(into hasher: inout Hasher) {
+    hasher.combine(jsonObj.id)
+  }
+  static func == (lhs: Building, rhs: Building) -> Bool {
+    return lhs.jsonObj.id == rhs.jsonObj.id
+  }
+  func description() -> String {
+    return """
+    id = "\(jsonObj.id)"
+    name = "\(jsonObj.name ?? "")"
+    address = "\(jsonObj.address?.line1 ?? ""), \(jsonObj.address?.city ?? ""), \(jsonObj.address?.country ?? ""), \(jsonObj.address?.zipCode ?? "")"
+    """
+  }
+}
+struct BuildingJSON: Codable {
   let id: Int
   let name: String?
   let clinetId: Int?
@@ -28,8 +48,8 @@ struct Address: Codable {
   let state: String?
   let zipCode: String?
   let country: String?
-  let lon: Double?
-  let lat: Double?
+  let longitude: Double?
+  let latitude: Double?
 }
 enum ProductType: String, Codable {
   case explorer = "AssetExplorer"

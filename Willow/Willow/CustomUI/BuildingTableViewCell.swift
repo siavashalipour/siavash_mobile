@@ -32,7 +32,14 @@ final class BuildingTableViewCell: UITableViewCell {
     imgView.contentMode = .scaleAspectFit
     return imgView
   }()
-  private lazy var mapButton: WCustomButton = {
+  private lazy var tickImageView: UIImageView = {
+    let imgView = UIImageView()
+    imgView.contentMode = .scaleAspectFit
+    imgView.isHidden = true
+    imgView.image = #imageLiteral(resourceName: "icons8-checked_filled")
+    return imgView
+  }()
+  lazy var mapButton: WCustomButton = {
     let btn = WCustomButton()
     btn.config(for: .map)
     btn.isHidden = true
@@ -51,6 +58,7 @@ final class BuildingTableViewCell: UITableViewCell {
   
   //MARK:- private constants
   private let kButtonHeight: CGFloat = 44
+  private var building: Building!
   
   // MARK:- super class method
   override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -64,8 +72,12 @@ final class BuildingTableViewCell: UITableViewCell {
   override func setSelected(_ selected: Bool, animated: Bool) {
     super.setSelected(selected, animated: animated)
     mapButton.isHidden = !selected
-    accessoryButton1.isHidden = !selected
-    accessoryButton2.isHidden = !selected
+    if building.jsonObj.availableProducts.count > 1 {
+      accessoryButton1.isHidden = !selected
+      accessoryButton2.isHidden = !selected
+    } else {
+      accessoryButton1.isHidden = !selected
+    }
   }
   // MARK:- private methods
   private func setupUI() {
@@ -111,12 +123,26 @@ final class BuildingTableViewCell: UITableViewCell {
       make.top.equalTo(mapButton.snp.bottom).offset(4)
       make.height.equalTo(kButtonHeight)
     }
+    contentView.addSubview(tickImageView)
+    tickImageView.snp.makeConstraints { (make) in
+      make.centerY.equalTo(titleLabel)
+      make.size.equalTo(24)
+      make.right.equalTo(-8)
+    }
   }
   // MARK:- pubnlic methods
   func config(with building: Building) {
-    titleLabel.text = "\(building.address?.city ?? ""), \(building.address?.country ?? "")"
-    subtitleLabel.text = "\(building.address?.line1 ?? ""), \(building.address?.line2 ?? "")"
-    if let url = URL(string: building.imageUrl) {
+    titleLabel.text = "\(building.jsonObj.address?.city ?? ""), \(building.jsonObj.address?.country ?? "")"
+    subtitleLabel.text = "\(building.jsonObj.address?.line1 ?? ""), \(building.jsonObj.address?.line2 ?? "")"
+    tickImageView.isHidden = !building.isRegistered
+    self.building = building
+    if building.jsonObj.availableProducts.count > 1 {
+      accessoryButton1.config(for: building.jsonObj.availableProducts[0])
+      accessoryButton2.config(for: building.jsonObj.availableProducts[1])
+    } else {
+      accessoryButton1.config(for: building.jsonObj.availableProducts[0])
+    }
+    if let url = URL(string: building.jsonObj.imageUrl) {
       let imageRequest = ImageRequest(url: url)
       Nuke.loadImage(
         with: imageRequest,

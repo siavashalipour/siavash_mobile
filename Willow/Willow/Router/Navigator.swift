@@ -17,6 +17,7 @@ class Navigator {
   enum Segue {
     case buildingsListViewController(BuildingsListViewModel)
     case filter(FilterViewModel)
+    case buildingsViewController(Building)
   }
   
   // MARK: - invoke a single segue
@@ -26,6 +27,8 @@ class Navigator {
       show(target: BuildingsListViewController.createWith(navigator: self, storyboard: sender.storyboard ?? defaultStoryboard, viewModel: viewModel), sender: sender)
     case .filter(let viewModel):
       show(target: FilterViewController.createWith(navigator: self, storyboard: sender.storyboard ?? defaultStoryboard, viewModel: viewModel), sender: sender)
+    case .buildingsViewController(let model):
+      show(target: BuildingsViewController.createWith(navigator: self, storyboard: sender.storyboard ?? defaultStoryboard, model: model), sender: sender)
     }
   }
   

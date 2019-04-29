@@ -43,7 +43,7 @@ final class BuildingServices {
   
   func fetch() -> Observable<MFResult<Array<Dictionary<String, AnyObject>>,ApiError>> {
     
-    return buildRequest(path: "buildings", jsonData: nil).map() { data in
+    return buildRequest(path: "buildings", jsonData: nil).timeout(5, scheduler: MainScheduler.instance).map() { data in
       do {
         let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
         if let jsonResult = jsonResult as? Array<Dictionary<String, AnyObject>> {

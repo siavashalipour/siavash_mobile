@@ -10,7 +10,9 @@ target 'Willow' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'Nuke'
-
+  pod 'Action'
+  pod 'RxGesture'
+  
   target 'WillowTests' do
     inherit! :search_paths
     # Pods for testing
