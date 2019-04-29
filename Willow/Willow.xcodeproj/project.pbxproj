@@ -21,7 +21,15 @@
 		7C75DFAA22768D4F00371FF2 /* WCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75DFA922768D4F00371FF2 /* WCustomButton.swift */; };
 		7C75DFAC2276907900371FF2 /* BuildingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75DFAB2276907900371FF2 /* BuildingViewController.swift */; };
 		7C75DFAE2276990E00371FF2 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75DFAD2276990E00371FF2 /* FilterViewController.swift */; };
-		7C75DFB0227699CF00371FF2 /* FilterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75DFAF227699CF00371FF2 /* FilterModel.swift */; };
+		7C75DFB0227699CF00371FF2 /* FilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75DFAF227699CF00371FF2 /* FilterViewModel.swift */; };
+		7C75DFB222769B7700371FF2 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75DFB122769B7700371FF2 /* Navigator.swift */; };
+		7C75DFB422769E9B00371FF2 /* testResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 7C75DFB322769E9B00371FF2 /* testResponse.json */; };
+		7C75DFB62276A50600371FF2 /* BuildingsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75DFB52276A50600371FF2 /* BuildingsListViewModel.swift */; };
+		7C75DFB82276A83000371FF2 /* UIStoryboard+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75DFB72276A83000371FF2 /* UIStoryboard+.swift */; };
+		7C75DFBA2276A9D000371FF2 /* BuildingServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75DFB92276A9D000371FF2 /* BuildingServices.swift */; };
+		7C75DFBC2276BA6F00371FF2 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75DFBB2276BA6F00371FF2 /* UIImage+.swift */; };
+		7C75DFC52276C0E400371FF2 /* FilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75DFC42276C0E400371FF2 /* FilterTableViewCell.swift */; };
+		7C75DFC72276C27700371FF2 /* FilterTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C75DFC62276C27700371FF2 /* FilterTableHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +62,15 @@
 		7C75DFA922768D4F00371FF2 /* WCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCustomButton.swift; sourceTree = "<group>"; };
 		7C75DFAB2276907900371FF2 /* BuildingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingViewController.swift; sourceTree = "<group>"; };
 		7C75DFAD2276990E00371FF2 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
-		7C75DFAF227699CF00371FF2 /* FilterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterModel.swift; sourceTree = "<group>"; };
+		7C75DFAF227699CF00371FF2 /* FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModel.swift; sourceTree = "<group>"; };
+		7C75DFB122769B7700371FF2 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		7C75DFB322769E9B00371FF2 /* testResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testResponse.json; sourceTree = SOURCE_ROOT; };
+		7C75DFB52276A50600371FF2 /* BuildingsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingsListViewModel.swift; sourceTree = "<group>"; };
+		7C75DFB72276A83000371FF2 /* UIStoryboard+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+.swift"; sourceTree = "<group>"; };
+		7C75DFB92276A9D000371FF2 /* BuildingServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingServices.swift; sourceTree = "<group>"; };
+		7C75DFBB2276BA6F00371FF2 /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		7C75DFC42276C0E400371FF2 /* FilterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTableViewCell.swift; sourceTree = "<group>"; };
+		7C75DFC62276C27700371FF2 /* FilterTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTableHeaderView.swift; sourceTree = "<group>"; };
 		8A26129EEA1B34A64F9506B8 /* Pods_WillowTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WillowTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F62434CD8DA1DDFB1073BA22 /* Pods-Willow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Willow.release.xcconfig"; path = "Target Support Files/Pods-Willow/Pods-Willow.release.xcconfig"; sourceTree = "<group>"; };
 		FAFEB5B3F2ABE9C63AF4119A /* Pods-WillowTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WillowTests.release.xcconfig"; path = "Target Support Files/Pods-WillowTests/Pods-WillowTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -103,15 +119,14 @@
 		7C56E227227682430084FF07 /* Willow */ = {
 			isa = PBXGroup;
 			children = (
+				7C75DFB322769E9B00371FF2 /* testResponse.json */,
 				7C56E228227682430084FF07 /* AppDelegate.swift */,
-				7C56E22A227682430084FF07 /* BuildingsListViewController.swift */,
-				7C75DFAB2276907900371FF2 /* BuildingViewController.swift */,
-				7C75DFAD2276990E00371FF2 /* FilterViewController.swift */,
-				7C75DFAF227699CF00371FF2 /* FilterModel.swift */,
-				7C75DFA32276876600371FF2 /* BuildingModel.swift */,
-				7C75DFA522768B7500371FF2 /* BuildingTableViewCell.swift */,
-				7C75DFA922768D4F00371FF2 /* WCustomButton.swift */,
-				7C75DFA722768BA800371FF2 /* UITableView+.swift */,
+				7C75DFC12276BFD900371FF2 /* Router */,
+				7C75DFC02276BFD200371FF2 /* Services */,
+				7C75DFBF2276BFC300371FF2 /* BuildingComponent */,
+				7C75DFBE2276BFAD00371FF2 /* FiltersComponent */,
+				7C75DFC32276BFFD00371FF2 /* CustomUI */,
+				7C75DFBD2276BF9F00371FF2 /* Extensions */,
 				7C56E22C227682430084FF07 /* Main.storyboard */,
 				7C56E22F227682440084FF07 /* Assets.xcassets */,
 				7C56E231227682440084FF07 /* LaunchScreen.storyboard */,
@@ -127,6 +142,71 @@
 				7C56E23F227682440084FF07 /* Info.plist */,
 			);
 			path = WillowTests;
+			sourceTree = "<group>";
+		};
+		7C75DFBD2276BF9F00371FF2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7C75DFA722768BA800371FF2 /* UITableView+.swift */,
+				7C75DFBB2276BA6F00371FF2 /* UIImage+.swift */,
+				7C75DFB72276A83000371FF2 /* UIStoryboard+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7C75DFBE2276BFAD00371FF2 /* FiltersComponent */ = {
+			isa = PBXGroup;
+			children = (
+				7C75DFAD2276990E00371FF2 /* FilterViewController.swift */,
+				7C75DFAF227699CF00371FF2 /* FilterViewModel.swift */,
+			);
+			path = FiltersComponent;
+			sourceTree = "<group>";
+		};
+		7C75DFBF2276BFC300371FF2 /* BuildingComponent */ = {
+			isa = PBXGroup;
+			children = (
+				7C75DFC22276BFE300371FF2 /* BuildingList */,
+				7C75DFAB2276907900371FF2 /* BuildingViewController.swift */,
+				7C75DFA32276876600371FF2 /* BuildingModel.swift */,
+			);
+			path = BuildingComponent;
+			sourceTree = "<group>";
+		};
+		7C75DFC02276BFD200371FF2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7C75DFB92276A9D000371FF2 /* BuildingServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7C75DFC12276BFD900371FF2 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				7C75DFB122769B7700371FF2 /* Navigator.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		7C75DFC22276BFE300371FF2 /* BuildingList */ = {
+			isa = PBXGroup;
+			children = (
+				7C56E22A227682430084FF07 /* BuildingsListViewController.swift */,
+				7C75DFB52276A50600371FF2 /* BuildingsListViewModel.swift */,
+			);
+			path = BuildingList;
+			sourceTree = "<group>";
+		};
+		7C75DFC32276BFFD00371FF2 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				7C75DFA922768D4F00371FF2 /* WCustomButton.swift */,
+				7C75DFA522768B7500371FF2 /* BuildingTableViewCell.swift */,
+				7C75DFC42276C0E400371FF2 /* FilterTableViewCell.swift */,
+				7C75DFC62276C27700371FF2 /* FilterTableHeaderView.swift */,
+			);
+			path = CustomUI;
 			sourceTree = "<group>";
 		};
 		9AC0BCFF26193BAECEC6B1DB /* Frameworks */ = {
@@ -233,6 +313,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C75DFB422769E9B00371FF2 /* testResponse.json in Resources */,
 				7C56E233227682440084FF07 /* LaunchScreen.storyboard in Resources */,
 				7C56E230227682440084FF07 /* Assets.xcassets in Resources */,
 				7C56E22E227682430084FF07 /* Main.storyboard in Resources */,
@@ -329,11 +410,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C75DFAA22768D4F00371FF2 /* WCustomButton.swift in Sources */,
+				7C75DFBC2276BA6F00371FF2 /* UIImage+.swift in Sources */,
+				7C75DFB222769B7700371FF2 /* Navigator.swift in Sources */,
 				7C56E22B227682430084FF07 /* BuildingsListViewController.swift in Sources */,
 				7C75DFAE2276990E00371FF2 /* FilterViewController.swift in Sources */,
-				7C75DFB0227699CF00371FF2 /* FilterModel.swift in Sources */,
+				7C75DFB0227699CF00371FF2 /* FilterViewModel.swift in Sources */,
+				7C75DFBA2276A9D000371FF2 /* BuildingServices.swift in Sources */,
 				7C75DFA42276876600371FF2 /* BuildingModel.swift in Sources */,
+				7C75DFC72276C27700371FF2 /* FilterTableHeaderView.swift in Sources */,
+				7C75DFB62276A50600371FF2 /* BuildingsListViewModel.swift in Sources */,
+				7C75DFC52276C0E400371FF2 /* FilterTableViewCell.swift in Sources */,
 				7C56E229227682430084FF07 /* AppDelegate.swift in Sources */,
+				7C75DFB82276A83000371FF2 /* UIStoryboard+.swift in Sources */,
 				7C75DFA822768BA800371FF2 /* UITableView+.swift in Sources */,
 				7C75DFA622768B7500371FF2 /* BuildingTableViewCell.swift in Sources */,
 				7C75DFAC2276907900371FF2 /* BuildingViewController.swift in Sources */,

@@ -1,0 +1,87 @@
+[{
+      "id":3010,
+      "name":"151 Clarence St | Sydney",
+      "clientId":2005,
+      "clientName":"FakeTechAB",
+      "address":{
+         "id":"c3930af4-2c70-4cbd-ba48-067e9d65b6df",
+         "line1":"151 Clarence St",
+         "line2":null,
+         "city":"Sydney",
+         "state":"NSW",
+         "zipCode":"2000",
+         "country":"Australia",
+         "longitude":151.20505660772324,
+         "latitude":-33.867841055515704
+      },
+      "availableProducts":[
+         "AssetExplorer",
+         "AssetRegister"
+      ],
+      "imageUrl":"https://wdtprodstorage.blob.core.windows.net/buildings/3010/images/3010.png"
+   },
+   {
+      "id":3012,
+      "name":"567 Collins St | Melbourne",
+      "clientId":2005,
+      "clientName":"FakeTechAB",
+      "address":{
+         "id":"bbedab4b-5b7d-490c-808c-000ad99fb8de",
+         "line1":"567 Collins St",
+         "line2":null,
+         "city":"Melbourne",
+         "state":"Victoria",
+         "zipCode":"3000",
+         "country":"Australia",
+         "longitude":144.9535743,
+         "latitude":-37.8190673
+      },
+      "availableProducts":[
+         "AssetExplorer",
+         "AssetRegister"
+      ],
+      "imageUrl":"https://wdtprodstorage.blob.core.windows.net/buildings/3012/images/3012.png"
+   },
+   {
+      "id":3025,
+      "name":"60 Martin Place | Sydney",
+      "clientId":2006,
+      "clientName":"MicrosoftAB",
+      "address":{
+         "id":"26b98757-39ae-41b1-a5a1-9619af0f591f",
+         "line1":"60 Martin Place",
+         "line2":null,
+         "city":"Sydney",
+         "state":"NSW",
+         "zipCode":"2000",
+         "country":"Australia",
+         "longitude":151.211897,
+         "latitude":-33.867512
+      },
+      "availableProducts":[
+         "AssetRegister"
+      ],
+      "imageUrl":"https://wdtprodstorage.blob.core.windows.net/buildings/3025/images/3025.png"
+   },
+   {
+      "id":3031,
+      "name":"Tall Tower 1",
+      "clientId":2012,
+      "clientName":"TKE ",
+      "address":{
+         "id":"86a9b11f-de9c-4577-8071-0ba67d129060",
+         "line1":"Berner Feld 60",
+         "line2":null,
+         "city":"Rottweil",
+         "state":null,
+         "zipCode":"78628",
+         "country":"Germany",
+         "longitude":8.6242635,
+         "latitude":48.1795435
+      },
+      "availableProducts":[
+         "AssetExplorer",
+         "AssetRegister"
+      ],
+      "imageUrl":"https://wdtprodstorage.blob.core.windows.net/buildings/3031/images/3031.png"
+   }]

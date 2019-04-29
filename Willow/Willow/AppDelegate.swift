@@ -13,9 +13,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
 
-
+  let navigator = Navigator()
+  
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
+    let rootNavigator = window!.rootViewController! as! UINavigationController
+    navigator.show(segue: .buildingsListViewController(BuildingsListViewModel.init(with: nil)), sender: rootNavigator)
+//    navigator.show(segue: .createAccount, sender: rootNavigator)
     return true
   }
 

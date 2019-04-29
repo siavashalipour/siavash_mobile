@@ -23,8 +23,11 @@ final class WCustomButton: UIButton {
   private func setupUI() {
     layer.cornerRadius = 8
     layer.borderColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
-    layer.borderWidth = 1
+    layer.borderWidth = 2
+    clipsToBounds = true
     setTitleColor(.white, for: .normal)
+    setBackgroundImage(UIImage.from(color: #colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1)), for: .normal)
+    titleLabel?.adjustsFontSizeToFitWidth = true
   }
   func config(for type: ProductType) {
     setTitle(type.previewDescription, for: .normal)
@@ -38,3 +41,4 @@ final class WCustomButton: UIButton {
     }
   }
 }
+

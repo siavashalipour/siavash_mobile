@@ -1,5 +1,5 @@
 //
-//  FilterViewController.swift
+//  FilterTableHeaderView.swift
 //  Willow
 //
 //  Created by Siavash on 29/4/19.
@@ -9,6 +9,7 @@
 import Foundation
 import SnapKit
 
-final class FilterViewController: UIViewController {
+final class FilterTableHeaderView: UIView {
+  
   
 }

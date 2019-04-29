@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import SnapKit
+import Nuke
 
 final class BuildingTableViewCell: UITableViewCell {
   //MARK:-  UI Items
@@ -54,7 +55,6 @@ final class BuildingTableViewCell: UITableViewCell {
   // MARK:- super class method
   override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
     super.init(style: style, reuseIdentifier: reuseIdentifier)
-    selectionStyle = .none
     setupUI()
   }
   required init?(coder aDecoder: NSCoder) {
@@ -82,9 +82,10 @@ final class BuildingTableViewCell: UITableViewCell {
     }
     contentView.addSubview(buildingImageView)
     buildingImageView.snp.makeConstraints { (make) in
-      make.top.equalTo(subtitleLabel.snp.bottom).offset(12)
+      make.top.equalTo(subtitleLabel.snp.bottom).offset(8)
       make.centerX.equalToSuperview()
       make.left.equalTo(titleLabel)
+      make.height.equalTo(UIScreen.main.bounds.width - 32)
       make.bottom.equalTo(-8)
     }
     
@@ -92,13 +93,15 @@ final class BuildingTableViewCell: UITableViewCell {
     contentView.addSubview(accessoryButton1)
     mapButton.snp.makeConstraints { (make) in
       make.left.equalTo(titleLabel).offset(8)
+      make.centerY.equalTo(buildingImageView).offset(-kButtonHeight/4)
       make.width.equalTo(accessoryButton1)
       make.height.equalTo(kButtonHeight)
     }
     accessoryButton1.snp.makeConstraints { (make) in
       make.left.equalTo(mapButton.snp.right).offset(2)
       make.width.equalTo(mapButton)
-      make.right.equalTo(-8)
+      make.centerY.equalTo(mapButton)
+      make.right.equalTo(buildingImageView).offset(-8)
       make.height.equalTo(kButtonHeight)
     }
     contentView.addSubview(accessoryButton2)
@@ -111,6 +114,20 @@ final class BuildingTableViewCell: UITableViewCell {
   }
   // MARK:- pubnlic methods
   func config(with building: Building) {
-    
+    titleLabel.text = "\(building.address?.city ?? ""), \(building.address?.country ?? "")"
+    subtitleLabel.text = "\(building.address?.line1 ?? ""), \(building.address?.line2 ?? "")"
+    if let url = URL(string: building.imageUrl) {
+      let imageRequest = ImageRequest(url: url)
+      Nuke.loadImage(
+        with: imageRequest,
+        options: ImageLoadingOptions(
+          placeholder: #imageLiteral(resourceName: "placeholder"),
+          transition: .fadeIn(duration: 0.33)
+        ),
+        into: buildingImageView
+      )
+    } else {
+      buildingImageView.image = #imageLiteral(resourceName: "placeholder")
+    }
   }
 }

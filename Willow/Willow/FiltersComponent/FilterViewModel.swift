@@ -8,13 +8,22 @@
 
 import Foundation
 
-struct Filter {
+struct Filter: Codable {
   let name: String
   var isSelected: Bool
   let type: FilterType
 }
 
-enum FilterType {
+enum FilterType: String, Codable {
   case city
   case country
+}
+
+final class FilterViewModel {
+  
+  private(set) var filters: [Filter]?
+  
+  init(with filters: [Filter]?) {
+    self.filters = filters
+  }
 }
